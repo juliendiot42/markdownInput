@@ -1,0 +1,2 @@
+# Package "markdownInput"
+This directory contains the "markdownInput" package for the R programming language. This package is a [R-Shiny module](https://shiny.rstudio.com/articles/modules.html) providing a Shiny input to write some markdown code and see a preview of the render.

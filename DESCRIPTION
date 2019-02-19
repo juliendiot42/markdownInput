@@ -1,0 +1,14 @@
+Package: markdownInput
+Type: Package
+Title: Markdown Shiny Input 
+Version: 0.1.0
+Authors@R: c(
+    person("Julien", "Diot", email="juliendiot42@gmail.com", role=c("aut", "ctb", "cre"), comment=c(ORCID="0000-0002-8738-2034"))
+    )
+Maintainer: Julien Diot <juliendiot42@gmail.com>
+Description: A R-Shiny module for markdown input.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/juliendiot42/markdownInput
+BugReports: https://github.com/juliendiot42/markdownInput/issues
