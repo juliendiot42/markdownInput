@@ -42,6 +42,7 @@ Create a markdown input control with a result preview
 ## Only run examples in interactive R sessions
 if (interactive()) {
  library(shiny)
+ library(markdownInput)
  ui <- fluidPage(titlePanel("Markdown input"),
                  sidebarLayout(
                    # inputs:

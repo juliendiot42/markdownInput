@@ -1,6 +1,6 @@
 Package: markdownInput
 Type: Package
-Title: Shiny module for a markdown input with result preview. 
+Title: Shiny module for a markdown input with result preview
 Version: 0.1.0
 Authors@R: c(
     person("Julien", "Diot", email="juliendiot42@gmail.com",
