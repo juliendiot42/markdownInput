@@ -31,11 +31,9 @@ any valid CSS dimension (such as "50\%", "200px", or "auto").}
 \item{class}{The CSS class name of the input. (optional)}
 }
 \value{
-A tabset containing two tabs:
-\enumerate{
-   \item{"Write" tab: }{Containing a code editor (\code{\link[shinyAce]{aceEditor}}).}
-   \item{"Preview" tab: }{Containing the preview of the markdown render.}
- }
+A tabset containing two tabs: \enumerate{ \item{"Write" tab:
+  }{Containing a code editor (\code{\link[shinyAce]{aceEditor}}).}
+  \item{"Preview" tab: }{Containing the preview of the markdown render.} }
 }
 \description{
 Create a markdown input control with a result preview
@@ -51,7 +49,7 @@ if (interactive()) {
                      markdownInput(
                        "mdInputID",
                        label = "Write your text",
-                       value = "Write some _markdown_ **here**\n\n;)"
+                       value = "Write some _markdown_ **here:**"
                        )
                    ),
 
@@ -79,17 +77,16 @@ if (interactive()) {
 \references{
 \enumerate{
  \item{\href{https://CRAN.R-project.org/package=shinyAce}{shinyAce} package:
- }{Vincent Nijs, Forest Fang, Trestle Technology, LLC and
- Jeff Allen (2019). shinyAce: Ace Editor Bindings for Shiny.}
+}{Vincent Nijs, Forest Fang, Trestle Technology, LLC and Jeff Allen (2019).
+shinyAce: Ace Editor Bindings for Shiny.}
 
- \item{\href{https://CRAN.R-project.org/package=shiny}{shiny} package: }{
- Winston Chang, Joe Cheng, JJ Allaire, Yihui Xie and Jonathan
-  McPherson (2018). shiny: Web Application Framework for R.}
+\item{\href{https://CRAN.R-project.org/package=shiny}{shiny} package: }{
+Winston Chang, Joe Cheng, JJ Allaire, Yihui Xie and Jonathan McPherson
+(2018). shiny: Web Application Framework for R.}
 
- \item{\href{https://CRAN.R-project.org/package=markdown}{markdown} package: }{
- JJ Allaire, Jeffrey Horner, Yihui Xie, Vicent Marti and
- Natacha Porte (2018). markdown: 'Markdown' Rendering for R.}
-}
+\item{\href{https://CRAN.R-project.org/package=markdown}{markdown} package:
+}{ JJ Allaire, Jeffrey Horner, Yihui Xie, Vicent Marti and Natacha Porte
+(2018). markdown: 'Markdown' Rendering for R.} }
 }
 \author{
 Julien Diot \email{juliendiot42@gmail.com}

@@ -50,7 +50,7 @@
 #'                      markdownInput(
 #'                        "mdInputID",
 #'                        label = "Write your text",
-#'                        value = "Write some _markdown_ **here**\n\n;)"
+#'                        value = "Write some _markdown_ **here:**"
 #'                        )
 #'                    ),
 #'
@@ -159,7 +159,7 @@ markdownInput <- function(inputId,
 #'                      markdownInput(
 #'                        "mdInputID",
 #'                        label = "Write your text",
-#'                        value = "Write some _markdown_ **here**\n\n;)"
+#'                        value = "Write some _markdown_ **here:**"
 #'                        )
 #'                    ),
 #'
