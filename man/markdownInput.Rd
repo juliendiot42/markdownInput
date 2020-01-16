@@ -4,8 +4,14 @@
 \alias{markdownInput}
 \title{Create a markdown input control with a result preview}
 \usage{
-markdownInput(inputId, label, value = "Some **markdown** _text_",
-  theme = "github", height = "400px", class = "")
+markdownInput(
+  inputId,
+  label,
+  value = "Some **markdown** _text_",
+  theme = "github",
+  height = "400px",
+  class = ""
+)
 }
 \arguments{
 \item{inputId}{The code{input} slot that will be used to access the value.}
@@ -45,7 +51,7 @@ if (interactive()) {
                      markdownInput(
                        "mdInputID",
                        label = "Write your text",
-                       value = "Write some _markdown_ **here**\\n\\n;)"
+                       value = "Write some _markdown_ **here**\n\n;)"
                        )
                    ),
 

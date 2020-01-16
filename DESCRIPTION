@@ -17,4 +17,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/juliendiot42/markdownInput
 BugReports: https://github.com/juliendiot42/markdownInput/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
