@@ -43,6 +43,7 @@
 #' ## Only run examples in interactive R sessions
 #' if (interactive()) {
 #'  library(shiny)
+#'  library(markdownInput)
 #'  ui <- fluidPage(titlePanel("Markdown input"),
 #'                  sidebarLayout(
 #'                    # inputs:
@@ -152,6 +153,7 @@ markdownInput <- function(inputId,
 #' ## Only run examples in interactive R sessions
 #' if (interactive()) {
 #'  library(shiny)
+#'  library(markdownInput)
 #'  ui <- fluidPage(titlePanel("Markdown input"),
 #'                  sidebarLayout(
 #'                    # inputs:

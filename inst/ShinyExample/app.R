@@ -2,6 +2,7 @@
 # This is a Shiny web application presenting the "markdownInput" package.
 
 library(shiny)
+library(markdownInput)
 ui <- fluidPage(titlePanel("Markdown input"),
                 sidebarLayout(
                     # inputs:
