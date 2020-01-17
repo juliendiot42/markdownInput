@@ -1,0 +1,20 @@
+image: rocker/verse
+
+stages:
+  - check
+  - deploy
+
+before_script:
+  - apt-get update
+  - r -e 'install.packages(c("devtools", "roxygen2", "testthat", "covr"))'
+  - r -e 'devtools::install_deps()'
+
+check:
+  stage: check
+  script:
+    - r -e 'devtools::check()'
+
+install:
+  stage: deploy
+  script:
+    - r -e 'devtools::install()'

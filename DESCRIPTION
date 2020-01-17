@@ -1,13 +1,15 @@
 Package: markdownInput
 Type: Package
-Title: Shiny module for a markdown input control
+Title: Shiny Module for a Markdown Input with Result Preview
 Version: 0.1.0
 Authors@R: c(
-    person("Julien", "Diot", email="juliendiot42@gmail.com",
-           role=c("aut","ctb", "cre"), comment=c(ORCID="0000-0002-8738-2034"))
+    person("Julien", "Diot", email="juliendiot@ut-biomet.org", role=c("aut","ctb", "cre"),
+    comment=c(ORCID="0000-0002-8738-2034"))
     )
-Maintainer: Julien Diot <juliendiot42@gmail.com>
-Description: A R-Shiny module for markdown input.
+Maintainer: Julien Diot <juliendiot@ut-biomet.org>
+Description: An R-Shiny module containing a "markdownInput". This input allows
+    the user to write some markdown code and to preview the result. This input
+    has been inspired by the "comment" window of GitHub.com.
 Imports:
     shiny (>= 1.0.5),
     shinyAce,
@@ -17,4 +19,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/juliendiot42/markdownInput
 BugReports: https://github.com/juliendiot42/markdownInput/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2

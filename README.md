@@ -1,5 +1,5 @@
 # Package "markdownInput"
-This directory contains the "markdownInput" package for the R programming language. This package is a [R-Shiny module](https://shiny.rstudio.com/articles/modules.html) providing a Shiny input to write some markdown code and see a preview of the render.
+This directory contains the "markdownInput" package for the R programming language. This package is a [R-Shiny module](https://shiny.rstudio.com/articles/modules.html) providing a Shiny input to write some markdown code and to preview the result. This input has been inspired by the "comment" window of GitHub.com.
 
 ## Installation
 To install this package, the easiest is to directly install the package from GitHub:
@@ -18,8 +18,61 @@ library(markdownInput)
 help(package=markdownInput)
 ```
 
+## Example
+
+Once you have downloaded the package, you can run an example app:
+
+<sub>In your `R` console:</sub>
+```R
+markdownInput::runExample()
+```
+
+## Usage
+
+
+### UI
+
+In the UI part of your app you should call the `markdownInput` function.
+
+For example:
+```R
+ui <- fluidPage(titlePanel("Markdown input"),
+                 sidebarLayout(
+                   # inputs:
+                   sidebarPanel(
+                     markdownInput(
+                       "mdInputID",
+                       label = "Write your text",
+                       value = "Write some _markdown_ **here:**"
+                       )
+                   ),
+
+                   # outputs:
+                   mainPanel(
+                   h3("Raw value of the input:"),
+                   verbatimTextOutput("rawResult"))
+                 ))
+```
+
+### Server
+
+You can access to the input's value in the server side by calling the module:
+
+```R
+server <- function(input, output, session) {
+    # myText is a reactive variable containing the raw markdown text
+    myText <- callModule(moduleMarkdownInput, "mdInputID")
+
+    # show "myText"
+    output$rawResult <- renderPrint({
+        print(myText())
+    })
+}
+```
+
 ## Issues
 When encountering a problem with the package, you can report issues on GitHub directly [here](https://github.com/juliendiot42/markdownInput/issues).
+
 
 
 ## Contributing

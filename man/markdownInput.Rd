@@ -4,8 +4,14 @@
 \alias{markdownInput}
 \title{Create a markdown input control with a result preview}
 \usage{
-markdownInput(inputId, label, value = "Some **markdown** _text_",
-  theme = "github", height = "400px", class = "")
+markdownInput(
+  inputId,
+  label,
+  value = "Some **markdown** _text_",
+  theme = "github",
+  height = "400px",
+  class = ""
+)
 }
 \arguments{
 \item{inputId}{The code{input} slot that will be used to access the value.}
@@ -25,11 +31,9 @@ any valid CSS dimension (such as "50\%", "200px", or "auto").}
 \item{class}{The CSS class name of the input. (optional)}
 }
 \value{
-A tabset containing two tabs:
-\enumerate{
-   \item{"Write" tab: }{Containing a code editor (\code{\link[shinyAce]{aceEditor}}).}
-   \item{"Preview" tab: }{Containing the preview of the markdown render.}
- }
+A tabset containing two tabs: \enumerate{ \item{"Write" tab:
+  }{Containing a code editor (\code{\link[shinyAce]{aceEditor}}).}
+  \item{"Preview" tab: }{Containing the preview of the markdown render.} }
 }
 \description{
 Create a markdown input control with a result preview
@@ -38,6 +42,7 @@ Create a markdown input control with a result preview
 ## Only run examples in interactive R sessions
 if (interactive()) {
  library(shiny)
+ library(markdownInput)
  ui <- fluidPage(titlePanel("Markdown input"),
                  sidebarLayout(
                    # inputs:
@@ -45,7 +50,7 @@ if (interactive()) {
                      markdownInput(
                        "mdInputID",
                        label = "Write your text",
-                       value = "Write some _markdown_ **here**\\n\\n;)"
+                       value = "Write some _markdown_ **here:**"
                        )
                    ),
 
@@ -73,17 +78,16 @@ if (interactive()) {
 \references{
 \enumerate{
  \item{\href{https://CRAN.R-project.org/package=shinyAce}{shinyAce} package:
- }{Vincent Nijs, Forest Fang, Trestle Technology, LLC and
- Jeff Allen (2019). shinyAce: Ace Editor Bindings for Shiny.}
+}{Vincent Nijs, Forest Fang, Trestle Technology, LLC and Jeff Allen (2019).
+shinyAce: Ace Editor Bindings for Shiny.}
 
- \item{\href{https://CRAN.R-project.org/package=shiny}{shiny} package: }{
- Winston Chang, Joe Cheng, JJ Allaire, Yihui Xie and Jonathan
-  McPherson (2018). shiny: Web Application Framework for R.}
+\item{\href{https://CRAN.R-project.org/package=shiny}{shiny} package: }{
+Winston Chang, Joe Cheng, JJ Allaire, Yihui Xie and Jonathan McPherson
+(2018). shiny: Web Application Framework for R.}
 
- \item{\href{https://CRAN.R-project.org/package=markdown}{markdown} package: }{
- JJ Allaire, Jeffrey Horner, Yihui Xie, Vicent Marti and
- Natacha Porte (2018). markdown: 'Markdown' Rendering for R.}
-}
+\item{\href{https://CRAN.R-project.org/package=markdown}{markdown} package:
+}{ JJ Allaire, Jeffrey Horner, Yihui Xie, Vicent Marti and Natacha Porte
+(2018). markdown: 'Markdown' Rendering for R.} }
 }
 \author{
 Julien Diot \email{juliendiot42@gmail.com}
