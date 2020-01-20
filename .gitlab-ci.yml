@@ -5,7 +5,7 @@ stages:
 
 before_script:
   - apt-get update
-  - r -e 'install.packages(c("devtools", "roxygen2", "testthat", "shiny", "shinyAce", "markdown"))'
+  - r -e 'install.packages(c("devtools", "roxygen2", "shiny", "shinyAce", "markdown"))'
 
 documentation:
   stage: checkPackage
@@ -18,11 +18,6 @@ check:
     - r -e 'devtools::build()'
     - cd ..
     - R CMD check --as-cran markdownInput_0.1.2.tar.gz
-
-unittests:
-  stage: checkPackage
-  script:
-    - r -e 'devtools::test()'
 
 install:
   stage: checkPackage
