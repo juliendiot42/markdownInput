@@ -1,10 +1,17 @@
+---
+title: "README markdownInput"
+---
+
 # Package "markdownInput"
+
 This directory contains the "markdownInput" package for the R programming language. This package is a [R-Shiny module](https://shiny.rstudio.com/articles/modules.html) providing a Shiny input to write some markdown code and to preview the result. This input has been inspired by the "comment" window of https://github.com/.
 
 ## Installation
+
 To install this package, the easiest is to directly install the package from GitHub:
 
 <sub>In your `R` console:</sub>
+
 ```R
 install.package("devtools")
 devtools::install_github("juliendiot42/markdownInput")
@@ -13,6 +20,7 @@ devtools::install_github("juliendiot42/markdownInput")
 Once the package is installed, start using it:
 
 <sub>In your `R` console:</sub>
+
 ```R
 library(markdownInput)
 help(package=markdownInput)
@@ -23,6 +31,7 @@ help(package=markdownInput)
 Once you have downloaded the package, you can run an example app:
 
 <sub>In your `R` console:</sub>
+
 ```R
 markdownInput::runExample()
 ```
@@ -35,6 +44,7 @@ markdownInput::runExample()
 In the UI part of your app you should call the `markdownInput` function.
 
 For example:
+
 ```R
 ui <- fluidPage(titlePanel("Markdown input"),
                  sidebarLayout(
@@ -71,11 +81,11 @@ server <- function(input, output, session) {
 ```
 
 ## Issues
+
 When encountering a problem with the package, you can report issues on GitHub directly [here](https://github.com/juliendiot42/markdownInput/issues).
 
-
-
 ## Contributing
+
 You can contribute in various ways:
 
 * report an issue (online, see the above section);
@@ -86,12 +96,15 @@ You can contribute in various ways:
 
 
 ## Citation
+
 I invest some time and effort to create this package. Please cite it when using it:
 
 <sub>In your `R` console:</sub>
+
 ```R
 citation("markdownInput")
 ```
+
 See also `citation()` for citing R itself.
 
 ## References
