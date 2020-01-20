@@ -1,5 +1,5 @@
 # Package "markdownInput"
-This directory contains the "markdownInput" package for the R programming language. This package is a [R-Shiny module](https://shiny.rstudio.com/articles/modules.html) providing a Shiny input to write some markdown code and to preview the result. This input has been inspired by the "comment" window of GitHub.com.
+This directory contains the "markdownInput" package for the R programming language. This package is a [R-Shiny module](https://shiny.rstudio.com/articles/modules.html) providing a Shiny input to write some markdown code and to preview the result. This input has been inspired by the "comment" window of https://github.com/.
 
 ## Installation
 To install this package, the easiest is to directly install the package from GitHub:
