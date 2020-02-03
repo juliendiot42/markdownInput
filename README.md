@@ -1,6 +1,11 @@
 ---
 title: "README markdownInput"
 ---
+<!-- badges : start -->
+[![CRAN
+status](https://www.r-pkg.org/badges/version/markdownInput)](https://CRAN.R-project.org/package=markdownInput)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+<!-- badges: end -->
 
 # Package "markdownInput"
 
@@ -8,12 +13,16 @@ This directory contains the "markdownInput" package for the R programming langua
 
 ## Installation
 
-To install this package, the easiest is to directly install the package from GitHub:
-
-<sub>In your `R` console:</sub>
+To install the stable version from CRAN, simply run the following from an R console:
 
 ```R
-install.package("devtools")
+install.packages("markdownInput")
+```
+
+To install latest development version from GitHub simply run the following from an R console:
+
+```R
+# install.package("devtools")
 devtools::install_github("juliendiot42/markdownInput")
 ```
 
