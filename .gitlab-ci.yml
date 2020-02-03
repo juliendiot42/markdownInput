@@ -1,20 +1,25 @@
 image: rocker/verse
 
 stages:
-  - check
-  - deploy
+  - checkPackage
 
 before_script:
   - apt-get update
-  - r -e 'install.packages(c("devtools", "roxygen2", "testthat", "covr"))'
-  - r -e 'devtools::install_deps()'
+  - r -e 'install.packages(c("devtools", "roxygen2", "shiny", "shinyAce", "markdown"))'
+
+documentation:
+  stage: checkPackage
+  script:
+    - r -e 'devtools::document()'
 
 check:
-  stage: check
+  stage: checkPackage
   script:
-    - r -e 'devtools::check()'
+    - r -e 'devtools::build()'
+    - cd ..
+    - R CMD check --as-cran markdownInput_0.1.2.tar.gz
 
 install:
-  stage: deploy
+  stage: checkPackage
   script:
     - r -e 'devtools::install()'
