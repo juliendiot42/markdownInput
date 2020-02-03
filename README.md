@@ -1,6 +1,3 @@
----
-title: "README markdownInput"
----
 <!-- badges : start -->
 [![CRAN
 status](https://www.r-pkg.org/badges/version/markdownInput)](https://CRAN.R-project.org/package=markdownInput)
